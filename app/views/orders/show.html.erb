@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order id:</strong>
+  <%= @order.id %>
+</p>
+
+<p>
+  <strong>Client id:</strong>
+  <%= @order.client_id %>
+</p>
+
+<p>
+  <strong>Client Name:</strong>
+  <%= @order.client.name %>
+</p>
+
+<p>
+  <strong>Grand total:</strong>
+  <%= @order.grand_total %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
+
